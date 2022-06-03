@@ -1,0 +1,39 @@
+/*****************/
+/**** IMPORTS ****/
+/*****************/
+@import './scss/variables',  './scss/inputs', './scss/buttons','./scss/layout', './scss/spacing', './scss/typography';
+
+/*****************/
+/***** UTILS *****/
+/*****************/
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg {
+  &-main {
+    background-color: $bg-color;
+  }
+
+  &-white {
+    background-color: #fff;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  color: $text-color;
+
+  &.hoverable {
+    transition: all ease-out 0.125s;
+
+    &:hover {
+      background-color: $hover-color;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

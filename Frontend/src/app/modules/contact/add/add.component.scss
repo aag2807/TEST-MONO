@@ -1,0 +1,43 @@
+.icon-container {
+  position: absolute;
+  top: 42px;
+  left: 11px;
+
+  &.phone {
+    top:22px;
+  }
+  svg {
+    fill: #656691;
+  }
+}
+
+svg {
+  transition:  all ease-out 0.125s;
+}
+
+.input-form-container {
+  max-width: 420px;
+
+  &.phone {
+    max-width: unset !important;
+  }
+}
+
+@media(max-width: 986px) {
+  .input-form-container {
+    max-width: 100%;
+  }
+}
+
+.FAB {
+  background-color: #656691;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  transform: translate(10px, -5px);
+
+  &:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #656691;
+  }
+}

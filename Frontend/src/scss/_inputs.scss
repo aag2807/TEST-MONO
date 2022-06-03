@@ -1,0 +1,47 @@
+$input-border: #DFDFE8;
+
+
+input {
+  transition: all ease-out 0.125s;
+  height: 45px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid $input-border;
+  text-indent: 40px;
+  color: $text-color;
+
+  &:focus {
+    border: 2px solid $hover-color;
+      & ~ .icon-container {
+        svg {
+          fill: $hover-color !important;
+          color: $hover-color !important;
+        }
+      }
+
+      &.error {
+        border: 2px solid $error-color;
+        & ~ .icon-container {
+          svg {
+            fill: $error-color !important;
+            color: $error-color !important;
+          }
+        }
+      }
+  }
+
+  &.error {
+    border: 2px solid $error-color;
+    & ~ .icon-container {
+      svg {
+        fill: $error-color !important;
+        color: $error-color !important;
+      }
+    }
+  }
+}
+
+
+.form-label {
+  color: $text-color;
+}

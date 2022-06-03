@@ -1,0 +1,347 @@
+//margin utils
+.m {
+
+  // margin left and right
+  &x {
+    &-1 {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    &-2 {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    &-3 {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    &-4 {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    &-5 {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
+  }
+
+  // margin top and bottom
+  &y {
+    &-1 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-2 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &-3 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &-4 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    &-5 {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  //margin top
+  &t {
+    &-1 {
+      margin-top: 0.5rem;
+    }
+
+    &-2 {
+      margin-top: 1rem;
+    }
+
+    &-3 {
+      margin-top: 1.5rem;
+    }
+
+    &-4 {
+      margin-top: 2rem;
+    }
+
+    &-5 {
+      margin-top: 2.5rem;
+    }
+  }
+
+  //margin bottom
+  &b {
+    &-1 {
+      margin-bottom: 0.5rem;
+    }
+
+    &-2 {
+      margin-bottom: 1rem;
+    }
+
+    &-3 {
+      margin-bottom: 1.5rem;
+    }
+
+    &-4 {
+      margin-bottom: 2rem;
+    }
+
+    &-5 {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  //margin left
+  &l {
+    &-1 {
+      margin-left: 0.5rem;
+    }
+
+    &-2 {
+      margin-left: 1rem;
+    }
+
+    &-3 {
+      margin-left: 1.5rem;
+    }
+
+    &-4 {
+      margin-left: 2rem;
+    }
+
+    &-5 {
+      margin-left: 2.5rem;
+    }
+  }
+
+  //margin right
+  &r {
+    &-1 {
+      margin-right: 0.5rem;
+    }
+
+    &-2 {
+      margin-right: 1rem;
+    }
+
+    &-3 {
+      margin-right: 1.5rem;
+    }
+
+    &-4 {
+      margin-right: 2rem;
+    }
+
+    &-5 {
+      margin-right: 2.5rem;
+    }
+  }
+
+  //general margin
+
+  &-0 {
+    margin: 0rem;
+  }
+
+  &-1 {
+    margin: 0.5rem;
+  }
+
+  &-2 {
+    margin: 1rem;
+  }
+
+  &-3 {
+    margin: 1.5rem;
+  }
+
+  &-4 {
+    margin: 2rem;
+  }
+
+  &-5 {
+    margin: 2.5rem;
+  }
+}
+
+//padding utils
+.p {
+  &y {
+    &-1 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    &-2 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &-3 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    &-4 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    &-5 {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &x {
+    &-1 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    &-2 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    &-3 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    &-4 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    &-5 {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
+  &t {
+    &-1 {
+      padding-top: 0.5rem;
+    }
+
+    &-2 {
+      padding-top: 1rem;
+    }
+
+    &-3 {
+      padding-top: 1.5rem;
+    }
+
+    &-4 {
+      padding-top: 2rem;
+    }
+
+    &-5 {
+      padding-top: 2.5rem;
+    }
+  }
+
+  &b {
+    &-1 {
+      padding-bottom: 0.5rem;
+    }
+
+    &-2 {
+      padding-bottom: 1rem;
+    }
+
+    &-3 {
+      padding-bottom: 1.5rem;
+    }
+
+    &-4 {
+      padding-bottom: 2rem;
+    }
+
+    &-5 {
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &l {
+    &-1 {
+      padding-left: 0.5rem;
+    }
+
+    &-2 {
+      padding-left: 1rem;
+    }
+
+    &-3 {
+      padding-left: 1.5rem;
+    }
+
+    &-4 {
+      padding-left: 2rem;
+    }
+
+    &-5 {
+      padding-left: 2.5rem;
+    }
+  }
+
+  &r {
+    &-1 {
+      padding-right: 0.5rem;
+    }
+
+    &-2 {
+      padding-right: 1rem;
+    }
+
+    &-3 {
+      padding-right: 1.5rem;
+    }
+
+    &-4 {
+      padding-right: 2rem;
+    }
+
+    &-5 {
+      padding-right: 2.5rem;
+    }
+  }
+
+  &-0 {
+    padding: 0rem;
+  }
+
+  &-1 {
+    padding: 0.5rem;
+  }
+
+  &-2 {
+    padding: 1rem;
+  }
+
+  &-3 {
+    padding: 1.5rem;
+  }
+
+  &-4 {
+    padding: 2rem;
+  }
+
+  &-5 {
+    padding: 2.5rem;
+  }
+
+}

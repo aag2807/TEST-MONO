@@ -1,0 +1,57 @@
+<main class="mw-100vw mh-100vh bg-main d-flex align-items-center justify-content-center">
+  <div class="w-100 h-100 d-flex flex-col align-items-center justify-content-center">
+   <!-- bnavigation button row-->
+    <div class="d-flex flex-row mb-2 justify-content-space-evenly w-100 flex-wrap card-row">
+      <!-- All contacts tab-->
+      <div class="card hoverable navigation-card p-2 d-flex align-items-center flex-col" (click)="navigate(routes.Visualize)">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
+          style="height: 30px; width: 30px; fill: #fff">
+          <title>Accessibility</title>
+          <path
+            d="M448 112c-66.82 17.92-119.55 32-192 32s-125.18-14.08-192-32l-16 51c48 20.53 96.71 35.16 147.2 53.2L144 496l56.4 16L246 336h20l45.6 176 56.4-16-51.2-279.8C367.26 199.93 416 183.53 464 164zM256 112a56 56 0 1156-56 56.06 56.06 0 01-56 56z" />
+        </svg>
+        <p class="font-weight-400 font-size-md mt-2">
+          Visualizar contactos
+        </p>
+
+      </div>
+
+      <!-- Add contacts tab-->
+      <div class="card hoverable navigation-card p-2 d-flex align-items-center flex-col" (click)="navigate(routes.Add)">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
+          style="height: 30px; width: 30px; fill: #fff">
+          <title>Person Add</title>
+          <path d="M106 304v-54h54v-36h-54v-54H70v54H16v36h54v54h36z" />
+          <circle cx="288" cy="144" r="112" />
+          <path d="M288 288c-69.42 0-208 42.88-208 128v64h416v-64c0-85.12-138.58-128-208-128z" />
+        </svg>
+
+        <p class="font-weight-400 font-size-md mt-2">
+          Agregar contactos
+        </p>
+      </div>
+
+      <!-- DRAFTS SAVED-->
+      <div class="card hoverable navigation-card p-2 d-flex align-items-center flex-col" (click)="navigate(routes.Draft)">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
+          style="height: 30px; width: 30px; fill: #fff">
+          <title>Mail</title>
+          <path
+            d="M464 80H48a16 16 0 00-16 16v320a16 16 0 0016 16h416a16 16 0 0016-16V96a16 16 0 00-16-16zM265.82 284.63a16 16 0 01-19.64 0L89.55 162.81l19.64-25.26L256 251.73l146.81-114.18 19.64 25.26z" />
+        </svg>
+
+        <p class="font-weight-400 font-size-md mt-2">
+          Borrador
+        </p>
+      </div>
+    </div>
+
+    <!-- application card body -->
+    <div class="d-flex flex-col mt-2 w-100 align-items-center">
+      <div class="card router-card p-4">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+  </div>
+</main>

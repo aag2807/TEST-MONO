@@ -1,0 +1,32 @@
+.navigation-card {
+  min-width: 200px;
+  min-height: 80px;
+  background: transparent;
+  color: #fff;
+
+}
+
+.router-card {
+  width: calc(90% - 3rem);
+  min-height: 600px;
+  max-width: calc(1000px - 3rem);
+}
+
+.card-row {
+  max-width: 1000px;
+}
+
+/** MEDIA QUERIES**/
+
+@media (max-width: 705px) {
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-card {
+    margin-bottom: 2rem;
+    background: transparent;
+    min-width: 320px;
+  }
+}
