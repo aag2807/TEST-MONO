@@ -75,7 +75,6 @@ class StorageHelper implements ILocalStorageHelper {
     const storedContacts = this.getContacts();
     const newContacts = storedContacts.filter(
       (contact) => {
-        console.log(contact.firstName === name);
         return contact.firstName !== name
       }
     );

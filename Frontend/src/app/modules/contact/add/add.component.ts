@@ -102,7 +102,7 @@ export class AddComponent implements OnInit, OnDestroy {
 
 
   private _handleCreateContact(contact: Contact) {
-    this.contactService.createContact(contact).subscribe(console.log);
+    this.contactService.createContact(contact).subscribe();
     this.contactForm.reset();
   }
 
