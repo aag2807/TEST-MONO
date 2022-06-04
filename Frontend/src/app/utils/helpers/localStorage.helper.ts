@@ -52,7 +52,6 @@ class StorageHelper implements ILocalStorageHelper {
     const storedContactJson: string = localStorage.getItem(
       this.localStorageKey
     )!;
-    console.log(storedContactJson)
     const invalidStoredJson =
       storedContactJson === null || storedContactJson === undefined;
 
@@ -60,7 +59,6 @@ class StorageHelper implements ILocalStorageHelper {
       return [];
     }
     const storedContacts: Array<Contact> = JSON.parse(storedContactJson);
-    console.log(storedContacts)
 
     return storedContacts;
   }
@@ -71,12 +69,15 @@ class StorageHelper implements ILocalStorageHelper {
    * Returns the contact with the given id
    * @param contact
    */
-  public removeContact(contactId: string): void {
-    Arguments.isEmptyOrWhiteSpace(contactId, 'Contact id is empty');
+  public removeContact(name: string): void {
+    Arguments.isEmptyOrWhiteSpace(name, 'Contact id is empty');
 
     const storedContacts = this.getContacts();
     const newContacts = storedContacts.filter(
-      (contact) => contact.id !== contactId
+      (contact) => {
+        console.log(contact.firstName === name);
+        return contact.firstName !== name
+      }
     );
 
     localStorage.setItem(this.localStorageKey, JSON.stringify(newContacts));

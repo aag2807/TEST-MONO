@@ -100,14 +100,10 @@ export class AddComponent implements OnInit, OnDestroy {
     this.storageHelper.saveContact(contact);
   }
 
+
   private _handleCreateContact(contact: Contact) {
-    this.contactService.createContact(contact).subscribe({
-      next: (data) => {},
-      error: (error) => {},
-      complete: () => {
-        this.contactForm.reset();
-      },
-    });
+    this.contactService.createContact(contact).subscribe(console.log);
+    this.contactForm.reset();
   }
 
   private _setFormGroup(): FormGroup {

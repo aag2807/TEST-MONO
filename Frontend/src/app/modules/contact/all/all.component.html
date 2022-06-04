@@ -1,7 +1,7 @@
 <section class="d-flex flex-row flex-wrap">
-  <!-- All contacts tab-->
   <ng-container *ngIf="contactsLength;else noContacts">
     <div *ngFor="let contact of contacts"
+      (click)="handleDelete(contact.id)"
       class="card hoverable mx-2 mb-2 navigation-card p-2 d-flex align-items-center flex-col">
       <svg xmlns="http://www.w3.org/2000/svg" style="height: 30px; width: 30px; fill: #fff" class="ionicon"
         viewBox="0 0 512 512">
@@ -15,8 +15,6 @@
       <p class="font-weight-400 font-size-sm mt-1">
         {{ contact?.email}}
       </p>
-
-
       <p class="font-weight-400 font-size-sm">
         {{ contact?.phone?.[0]}}
       </p>

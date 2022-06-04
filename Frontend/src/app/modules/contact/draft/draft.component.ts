@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Contact } from 'src/app/common/types/contact.type';
 import InstanceHelper from 'src/app/utils/helpers/localStorage.helper';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-draft',
@@ -19,5 +20,19 @@ export class DraftComponent implements OnInit {
 
   public get contactsLength(){
     return this.contacts.length;
+  }
+
+  public deleteFromStorage(name: string): void {
+    Swal.fire({
+      title: 'Are you sure want to delete?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+    }).then(({isConfirmed}) => {
+      if(isConfirmed) {
+          this.storageHelper.removeContact(name);
+          this.contacts = this.storageHelper.getContacts();
+      }
+    })
   }
 }
